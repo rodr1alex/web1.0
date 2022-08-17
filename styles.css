@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    .header{
+        width: 100vw;
+    }
+    .header-1{
+        width: 100%;
+        height: 100px;
+    }
+    .header-1-contact{
+        padding-top: 30px;
+        text-align: center;
+    }
+    .header-1-rrss ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .header-1-rrss ul li{
+        list-style: none;
+    }
+    .header-1-rrss ul li a img{
+        margin: 10px;
+    }
+    
+    .header-2-menu{
+        border-bottom: 1px solid black;
+    }
+    .header-2-menu__toogle{
+        position: absolute;
+        cursor: pointer;
+        margin: 0 1rem;
+        right: 0;
+    }
+    .close{
+        display: none;
+    }
+    .header-2-menu__checkbox{
+        display: none;
+    }
+    .header-2-menu-list{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        margin: 1rem;
+    }
+    .header-2-menu-list a{
+        color: inherit;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+    .header-2-menu-list li{
+        list-style-type: none;
+        display: none;
+    }
+    .header-2-menu-list li:first-child{
+        margin-right: auto;
+        display: block;
+    }
+    #header-2-menu__checkbox:checked ~ ul.header-2-menu-list li{
+        display: block;
+    }
+    #header-2-menu__checkbox:checked ~ label.header-2-menu__toogle .close{
+        display: block;
+    }
+    #header-2-menu__checkbox:checked ~ label.header-2-menu__toogle .list{
+        display: none;
+    }
+    .main{
+        width: 100vw;
+    }
+    .main-slider-container{
+    display: flex;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    }
+    .main-info-container{
+        width: 90%;
+        margin: 0 auto;
+        background-color: wheat;
+    }
+    .main-info-container-div{
+        width: 80%;
+        height: 300px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background-color: teal;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer{
+        width: 100vw;
+        padding-top: 30px;
+        background-image: url(./images/pie/TIPOLOGÍA\ \(A\)\ SILUETA\ CASA\ -NEGRO.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .footer-img{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-rows: 9fr 1fr;
+    }
+    .footer1{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .footer2{
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+    }
+    .footer2 ul{
+        display: flex;
+        justify-content: center;
+    }
+    .footer ul li{
+        list-style: none;
+    }
+
+@media (min-width: 768px){
+    .footer{
+        width: 100vw;
+        padding-top: 50px;
+       }
+       .footer-img{
+           width: 90%;
+           height: 90%;
+           margin: 0 auto;
+           display: grid;
+           grid-template-rows: 6fr 1fr;
+           border-top: 1px solid white;
+       }
+       .footer1{
+           width: 75%;
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr;
+           align-content: center;
+       }
+       .footer2{
+           border-top: 1px solid white;
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+       }
+       .footer2 ul{
+           display: flex;
+       }
+       .footer ul li{
+           list-style: none;
+           margin-left: 10px;
+       }
+
+}
