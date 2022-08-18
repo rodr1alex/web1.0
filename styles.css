@@ -35,10 +35,6 @@
     .header-1-rrss ul li a img{
         margin: 10px;
     }
-    
-    .header-2-menu{
-        border-bottom: 1px solid black;
-    }
     .header-2-menu__toogle{
         position: absolute;
         cursor: pointer;
@@ -98,14 +94,23 @@
         background-color: var(--blanco);
     }
     .main-info-container-div{
-        width: 80%;
+        width: 95%;
         height: 300px;
         margin: 0 auto;
         margin-bottom: 10px;
+        margin-top: 10px;
         background-color: white;
         box-shadow: 0 1px 6px 0 #20212447;
-        border-color: #dfe1e500;    
+        border-color: #dfe1e500;  
+        border-radius: 3px;  
+        padding: 10px;
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr;
     }
+    .main-info-container-div__img{
+        justify-self: center;
+    }
+
 
     .desplegable__toogle{
         cursor: pointer;       
@@ -118,30 +123,43 @@
     }
     .desplegable__checkbox{
         display: none;
-    }
-    .desplegable__lista{
-       
-    }
-    /* .desplegable__lista a{
-        color: inherit;
-        text-decoration: none;
-        font-size: 1.1rem;
-    } */
+    }    
     .desplegable__lista li{
         list-style: none;
         display: none;
     }
-/*     .desplegable__lista li:first-child {
-        margin-left: auto;
-        display: block;
-    }
- */    #desplegable__checkbox:checked ~ ul.desplegable__lista li{
+    #desplegable__checkbox:checked ~ ul.desplegable__lista li{
         display: inline;
     }
     #desplegable__checkbox:checked ~ label.desplegable__toogle .desplegable__abierto{
         display: flex;
     }
     #desplegable__checkbox:checked ~ label.desplegable__toogle .desplegable__cerrado{
+        display: none;
+    }
+    .desplegable__toogle2{
+        cursor: pointer;       
+    }
+    .desplegable__cerrado2{
+        display: flex;
+    }
+    .desplegable__abierto2{
+        display: none;
+    }
+    .desplegable__checkbox2{
+        display: none;
+    }    
+    .desplegable__lista2 li{
+        list-style: none;
+        display: none;
+    }
+    #desplegable__checkbox2:checked ~ ul.desplegable__lista2 li{
+        display: inline;
+    }
+    #desplegable__checkbox2:checked ~ label.desplegable__toogle2 .desplegable__abierto2{
+        display: flex;
+    }
+    #desplegable__checkbox2:checked ~ label.desplegable__toogle2 .desplegable__cerrado2{
         display: none;
     }
 
