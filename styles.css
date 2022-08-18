@@ -15,6 +15,8 @@
     .header{
         width: 100vw;
         background-color: var(--verde-azulado);
+        font-weight: bold;
+        color: var(--blanco);
     }
     .header-1{
         width: 100%;
@@ -112,22 +114,23 @@
     }
 
 
-    .desplegable__toogle{
+    .desplegable__toogle,.desplegable__toogle2,.desplegable__toogle21,.desplegable__toogle22,.desplegable__toogle31,.desplegable__toogle32{
         cursor: pointer;       
     }
-    .desplegable__cerrado{
+    .desplegable__cerrado,.desplegable__cerrado2,.desplegable__cerrado21,.desplegable__cerrado22,.desplegable__cerrado31,.desplegable__cerrado32{
         display: flex;
     }
-    .desplegable__abierto{
+    .desplegable__abierto,.desplegable__abierto2,.desplegable__abierto21,.desplegable__abierto22,.desplegable__abierto31,.desplegable__abierto32{
         display: none;
     }
-    .desplegable__checkbox{
+    .desplegable__checkbox,.desplegable__checkbox2,.desplegable__checkbox21,.desplegable__checkbox22,.desplegable__checkbox31,.desplegable__checkbox32{
         display: none;
     }    
-    .desplegable__lista li{
+    .desplegable__lista li,.desplegable__lista2 li,.desplegable__lista21 li,.desplegable__lista22 li,.desplegable__lista31 li,.desplegable__lista32 li{
         list-style: none;
         display: none;
     }
+
     #desplegable__checkbox:checked ~ ul.desplegable__lista li{
         display: inline;
     }
@@ -137,22 +140,7 @@
     #desplegable__checkbox:checked ~ label.desplegable__toogle .desplegable__cerrado{
         display: none;
     }
-    .desplegable__toogle2{
-        cursor: pointer;       
-    }
-    .desplegable__cerrado2{
-        display: flex;
-    }
-    .desplegable__abierto2{
-        display: none;
-    }
-    .desplegable__checkbox2{
-        display: none;
-    }    
-    .desplegable__lista2 li{
-        list-style: none;
-        display: none;
-    }
+
     #desplegable__checkbox2:checked ~ ul.desplegable__lista2 li{
         display: inline;
     }
@@ -163,7 +151,45 @@
         display: none;
     }
 
+    #desplegable__checkbox21:checked ~ ul.desplegable__lista21 li{
+        display: inline;
+    }
+    #desplegable__checkbox21:checked ~ label.desplegable__toogle21 .desplegable__abierto21{
+        display: flex;
+    }
+    #desplegable__checkbox21:checked ~ label.desplegable__toogle21 .desplegable__cerrado21{
+        display: none;
+    }
 
+    #desplegable__checkbox22:checked ~ ul.desplegable__lista22 li{
+        display: inline;
+    }
+    #desplegable__checkbox22:checked ~ label.desplegable__toogle22 .desplegable__abierto22{
+        display: flex;
+    }
+    #desplegable__checkbox22:checked ~ label.desplegable__toogle22 .desplegable__cerrado22{
+        display: none;
+    }
+
+    #desplegable__checkbox31:checked ~ ul.desplegable__lista31 li{
+        display: inline;
+    }
+    #desplegable__checkbox31:checked ~ label.desplegable__toogle31 .desplegable__abierto31{
+        display: flex;
+    }
+    #desplegable__checkbox31:checked ~ label.desplegable__toogle31 .desplegable__cerrado31{
+        display: none;
+    }
+
+    #desplegable__checkbox32:checked ~ ul.desplegable__lista32 li{
+        display: inline;
+    }
+    #desplegable__checkbox32:checked ~ label.desplegable__toogle32 .desplegable__abierto32{
+        display: flex;
+    }
+    #desplegable__checkbox32:checked ~ label.desplegable__toogle32 .desplegable__cerrado32{
+        display: none;
+    }
 
     .footer{
         width: 100vw;
