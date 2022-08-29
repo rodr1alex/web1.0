@@ -4,237 +4,152 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titulo_web</title>
+    <title>Kolihue.cl</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/852001f7ca.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header class="header">
-        <div class="header-1">
-            <div class="header-1-contact">
-                <p>Call:800 002 9805</p>
-                <p>Email: asfs@smfdf.com</p>
-            </div>
-            <div class="header-1-rrss">
-                <ul>
-                    <li><a href=""><img src="./icons/TIPOLOGÍA (A) GMAIL -NEGRO.png" width="30" alt="red social"><p>kolihueservicios@gmail.com</p></a></li>
-                    <li><a href=""><img src="./icons/TIPOLOGÍA (A) GMAIL -NEGRO.png" width="30" alt="red social"><p>kolihue@protonmail.com</p></a></li>
-                    <li><a href=""><img src="./icons/TIPOLOGÍA (A) WHATSSAPP -NEGRO.png" width="30" alt="red social"><p>+569 54716323</p></a></li>
-                    <li><a href=""><img src="./icons/TIPOLOGÍA (A) TELEGRAM -NEGRO.png" width="30" alt="red social"><p>t.me/kolihue</p></a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="header-2">
-            <img class="header-2__img" src="icons/TIPOLOGÍA (A) KOLIHUE -BLANCO.png" alt="logo">
-            <nav class="header-2-menu">
-                <input type="checkbox" class="header-2-menu__checkbox" id="header-2-menu__checkbox">
-                <label for="header-2-menu__checkbox" class="header-2-menu__toogle">
-                    <img src="./icons/eliminar-simbolo.png" alt="close" width="30" class="close">
-                    <img src="./icons/lista_white.png" alt="list_menu" width="30" class="list">
-                </label>
-                <ul class="header-2-menu-list">
-                    <li class="header-2-menu-list__menu">
-                        <img src="icons/TIPOLOGÍA (A) KOLIHUE -BLANCO.png" alt="logo">
-                    </li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Portafolio</a></li>
+        <div class="header1">
+            <nav>
+                <ul class="header1-nav">
+                    <li><a href="#"><img src="./icons/TIPOLOGÍA (A) GMAIL -NEGRO.png"  alt="icon"><p>kolihueservicios@gmail.com</p></a></li>
+                    <li><a href="#"><img src="./icons/TIPOLOGÍA (A) GMAIL -NEGRO.png" alt="icon"><p>kolihue@protonmail.com</p></a></li>
+                    <li><a href="#"><img src="./icons/TIPOLOGÍA (A) WHATSSAPP -NEGRO.png" alt="icon"><p>+56954716323</p></a></li>
+                    <li><a href="#"><img src="./icons/TIPOLOGÍA (A) TELEGRAM -NEGRO.png"  alt="icon"><p>t.me/kolihue</p></a></li>
                 </ul>
             </nav>
         </div>
+        <div class="header2">
+            <div class="header2-icon">
+                <img src="./icons/TIPOLOGÍA (A) KOLIHUE -BLANCO.png"  alt="">
+            </div>
+            <section class="header2-menu">
+                <nav>
+                    <ul class="header2-menu__lista1">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li class="desplegable1">
+                            <input type="checkbox" id="servicios_desp" class="desplegable1__checkbox">
+                            <label for="servicios_desp" class="desplegable1__toogle">
+                                <p class="desplegable1__abierto"><i class="fa-solid fa-caret-down"></i>Servicios</p>
+                                <p class="desplegable1__cerrado"><i class="fa-solid fa-caret-right"></i>Servicios</p>
+                            </label>
+                            <ul class="desplegable1__listaMenu">
+                                <li><a href="">Diseño 3D</a></li>
+                                <li><a href="">Edificación</a></li>
+                                <li><a href="">Obras complementarias</a></li>
+                                <li><a href="">Patio</a></li>
+                                <li><a href="">Agro-jardin</a></li>
+                                <li><a href="">Revestimientos exteriores</a></li>
+                                <li><a href="">Pavimentos</a></li>
+                                <li><a href="">Instalaciones sanitarias</a></li>
+                                <li><a href="">Artefactos sanitarios</a></li>
+                                <li><a href="">Calefactores</a></li>
+                                <li><a href="">Tratamiento de superficies</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </div>
     </header>
-    <main class="main">
-        <section class="main-slider-container">
-            <img src="./images/main-slider/1.jpeg" alt="">
-            <img src="./images/main-slider/2.jpeg" alt="">
-            <img src="./images/main-slider/3.jpg" alt="">
-        </section>
-        <section class="sliderContainer">
-            <article class="slider" id="slider1">
-                <div class="slider__img slider1__img">
-                    <img src="./images/main-slider/IMAG (A) INSTALADOR -COLOR.jpg" alt="">
-                </div>
-                <div class="slider__flechas slider1__flechas">
-                    <a href="#slider3"><p>&lt;</p></a>
-                    <div class="slider__flechas-contacto" href="#">
-                        <p>Servicos Hogar</p>
-                        <p><span>icon</span>WhatsApp</p>
-                        <img src="./images/QR/WHATSAPP/QR (C) WHATSAPP -CLARO.png" alt="QR">
+    <main>
+        <section class="sliderContent">
+            <div class="imageContent">
+                <div class="image image1" id="image1">
+                    <div class="image__pick">
+                        <img src="./images/main-slider/IMAG (A) INSTALADOR -COLOR.jpg" alt="imagen1">
                     </div>
-                    <a href="#slider2"><p>&gt;</p></a>
-                </div>
-            </article>
-            <article class="slider " id="slider2">
-                <div class="slider__img slider2__img">
-                    <img src="./images/main-slider/IMAG (B) INSTALADOR -COLOR.jpg" alt="">
-                </div>
-                <div class="slider__flechas slider1__flechas">
-                    <a href="#slider1"><p>&lt;</p></a>
-                    <div class="slider__flechas-contacto" href="#">
-                        <p>Servicos Hogar</p>
-                        <p><span>icon</span>WhatsApp</p>
-                        <img src="./images/QR/WHATSAPP/QR (C) WHATSAPP -CLARO.png" alt="QR">
+                    <div class="image__flechas">
+                        <a href="#image3"><i class="fa-solid fa-circle-chevron-left"></i></a>
+                        <a href="#image2"><i class="fa-solid fa-circle-chevron-right"></i></a>
                     </div>
-                    <a href="#slider3"><p>&gt;</p></a>
-                </div>
-            </article>
-            <article class="slider" id="slider3">
-                <div class="slider__img slider3__img">
-                    <img src="./images/main-slider/IMAG (C) INSTALADOR -COLOR.jpg" alt="">
-                </div>
-                <div class="slider__flechas slider1__flechas">
-                    <a href="#slider2"><p>&lt;</p></a>
-                    <div class="slider__flechas-contacto" href="#">
-                        <p>Servicos Hogar</p>
-                        <p><span>icon</span>WhatsApp</p>
-                        <img src="./images/QR/WHATSAPP/QR (C) WHATSAPP -CLARO.png" alt="QR">
+                    <div class="image__elementos">
+                        <div class="image__elementos-1">
+                            <a href=""><p><i></i>Contacto WhatsApp</p></a>                            
+                        </div>
+                        <div class="image__elementos-2">
+                            <img src="./images/QR/DROPBOX/QR (C) DROPBOX -CERAMICA.png" alt="codigo qr">
+                            <div class="image__elementos-2__parrafo">
+                                <div class="image__elementos-2__parrafo-1"><p>Servicios Hogar</p></div>
+                                <div class="image__elementos-2__parrafo-2">
+                                    <p>Construcciones |</p>
+                                    <p>Instalaciones |</p>
+                                    <p>Terminaciones</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="image__elementos-3">
+                            <a href="#"><p>Ver mas</p></a>                            
+                        </div>
                     </div>
-                    <a href="#slider1"><p>&gt;</p></a>
                 </div>
-            </article>
-        </section>
-        <section class="main-info-container">
-            <div class="main-info-container-div main-info-container-div--1">
-                <img src="./images/info/1.jpeg" alt="imagen referencia" width="200px" class="main-info-container-div__img">
-                <div class="desplegable">
-                    <input type="checkbox" id="desplegable__checkbox" class="desplegable__checkbox">
-                    <label for="desplegable__checkbox" class="desplegable__toogle">                        
-                        <div class="desplegable__cerrado">
-                            <img src="./icons/cerrado.png" width="10" alt="icon cerrado" > 
-                            <p>Productos de alta calidad</p>
+                <div class="image image2" id="image2">
+                    <div class="image__pick">
+                        <img src="images/main-slider/IMAG (B) INSTALADOR -COLOR.jpg" alt="imagen2">
+                    </div>
+                    <div class="image__flechas">
+                        <a href="#image1"><i class="fa-solid fa-circle-chevron-left"></i></a>
+                        <a href="#image3"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                    <div class="image__elementos">
+                        <div class="image__elementos-1">
+                            <a href=""><p><i></i>Contacto WhatsApp</p></a>                            
                         </div>
-                        <div class="desplegable__abierto">
-                            <img src="./icons/abiertp.png" width="10" alt="icon cerrado" > 
-                            <p>Productos de alta calidad</p>
+                        <div class="image__elementos-2">
+                            <img src="./images/QR/DROPBOX/QR (C) DROPBOX -CERAMICA.png" alt="codigo qr">
+                            <div class="image__elementos-2__parrafo">
+                                <div class="image__elementos-2__parrafo-1"><p>Servicios Hogar</p></div>
+                                <div class="image__elementos-2__parrafo-2">
+                                    <p>Construcciones |</p>
+                                    <p>Instalaciones |</p>
+                                    <p>Terminaciones</p>
+                                </div>
+                            </div>
                         </div>
-                    </label>
-                    <ul class="desplegable__lista">
-                        <li class="desplegable__lista-contenido"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, e</p></li>
-                    </ul>
+                        <div class="image__elementos-3">
+                            <a href="#"><p>Ver mas</p></a>                            
+                        </div>
+                    </div>
                 </div>
-                <div class="desplegable">
-                    <input type="checkbox" id="desplegable__checkbox2" class="desplegable__checkbox2">
-                    <label for="desplegable__checkbox2" class="desplegable__toogle2">                        
-                        <div class="desplegable__cerrado2">
-                            <img src="./icons/cerrado.png" width="10" alt="icon cerrado" > 
-                            <p>Presupuestos personalizados</p>
+                <div class="image image3" id="image3">
+                    <div class="image__pick">
+                        <img src="./images/main-slider/IMAG (C) INSTALADOR -COLOR.jpg" alt="">
+                    </div>
+                    <div class="image__flechas">
+                        <a href="#image2"><i class="fa-solid fa-circle-chevron-left"></i></a>
+                        <a href="#image1"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                    <div class="image__elementos">
+                        <div class="image__elementos-1">
+                            <a href=""><p><i></i>Contacto WhatsApp</p></a>                            
                         </div>
-                        <div class="desplegable__abierto2">
-                            <img src="./icons/abiertp.png" width="10" alt="icon cerrado" > 
-                            <p>Presupuestos personalizados</p>
+                        <div class="image__elementos-2">
+                            <img src="./images/QR/DROPBOX/QR (C) DROPBOX -CERAMICA.png" alt="codigo qr">
+                            <div class="image__elementos-2__parrafo">
+                                <div class="image__elementos-2__parrafo-1"><p>Servicios Hogar</p></div>
+                                <div class="image__elementos-2__parrafo-2">
+                                    <p>Construcciones |</p>
+                                    <p>Instalaciones |</p>
+                                    <p>Terminaciones</p>
+                                </div>
+                            </div>
                         </div>
-                    </label>
-                    <ul class="desplegable__lista2">
-                        <li class="desplegable__lista-contenido2"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, e</p></li>
-                    </ul>
+                        <div class="image__elementos-3">
+                            <a href="#"><p>Ver mas</p></a>                            
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-info-container-div main-info-container-div--2">
-                <img src="./images/info/1.jpeg" alt="imagen referencia" width="200px" class="main-info-container-div__img21">
-                <div class="desplegable21">
-                    <input type="checkbox" id="desplegable__checkbox21" class="desplegable__checkbox21">
-                    <label for="desplegable__checkbox21" class="desplegable__toogle21">                        
-                        <div class="desplegable__cerrado21">
-                            <img src="./icons/cerrado.png" width="10" alt="icon cerrado" > 
-                            <p>Productos de alta calidad</p>
-                        </div>
-                        <div class="desplegable__abierto21">
-                            <img src="./icons/abiertp.png" width="10" alt="icon cerrado" > 
-                            <p>Productos de alta calidad</p>
-                        </div>
-                    </label>
-                    <ul class="desplegable__lista21">
-                        <li class="desplegable__lista-contenido21"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, e</p></li>
-                    </ul>
-                </div>
-                <div class="desplegable22">
-                    <input type="checkbox" id="desplegable__checkbox22" class="desplegable__checkbox22">
-                    <label for="desplegable__checkbox22" class="desplegable__toogle22">                        
-                        <div class="desplegable__cerrado22">
-                            <img src="./icons/cerrado.png" width="10" alt="icon cerrado" > 
-                            <p>Presupuestos personalizados</p>
-                        </div>
-                        <div class="desplegable__abierto22">
-                            <img src="./icons/abiertp.png" width="10" alt="icon cerrado" > 
-                            <p>Presupuestos personalizados</p>
-                        </div>
-                    </label>
-                    <ul class="desplegable__lista22">
-                        <li class="desplegable__lista-contenido22"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, e</p></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="main-info-container-div main-info-container-div--3">
-                <img src="./images/info/1.jpeg" alt="imagen referencia" width="200px" class="main-info-container-div__img31">
-                <div class="desplegable31">
-                    <input type="checkbox" id="desplegable__checkbox31" class="desplegable__checkbox31">
-                    <label for="desplegable__checkbox31" class="desplegable__toogle31">                        
-                        <div class="desplegable__cerrado31">
-                            <img src="./icons/cerrado.png" width="10" alt="icon cerrado" > 
-                            <p>Productos de alta calidad</p>
-                        </div>
-                        <div class="desplegable__abierto31">
-                            <img src="./icons/abiertp.png" width="10" alt="icon cerrado" > 
-                            <p>Productos de alta calidad</p>
-                        </div>
-                    </label>
-                    <ul class="desplegable__lista31">
-                        <li class="desplegable__lista-contenido31"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, e</p></li>
-                    </ul>
-                </div>
-                <div class="desplegable32">
-                    <input type="checkbox" id="desplegable__checkbox32" class="desplegable__checkbox32">
-                    <label for="desplegable__checkbox32" class="desplegable__toogle32">                        
-                        <div class="desplegable__cerrado32">
-                            <img src="./icons/cerrado.png" width="10" alt="icon cerrado" > 
-                            <p>Presupuestos personalizados</p>
-                        </div>
-                        <div class="desplegable__abierto32">
-                            <img src="./icons/abiertp.png" width="10" alt="icon cerrado" > 
-                            <p>Presupuestos personalizados</p>
-                        </div>
-                    </label>
-                    <ul class="desplegable__lista32">
-                        <li class="desplegable__lista-contenido32"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, e</p></li>
-                    </ul>
-                </div>
+            <div class="puntitos">
+                <a href="#image1"><i class="fa-solid fa-circle"></i></a>
+                <a href="#image2"><i class="fa-solid fa-circle"></i></a>
+                <a href="#image3"><i class="fa-solid fa-circle"></i></a>
             </div>
         </section>
     </main>
-    <footer class="footer" >
-        <div class="footer-img">
-            <div class="footer1">
-                <div class="footer1-div1">
-                    <img src="" alt="Icono empresa">
-                    <p><span>icon</span> 2855 Commerce Parkway, North Port, FL 34289</p>
-                    <p><span>icon</span> 1-8494-34-434</p>
-                    <p><span>icon</span>info@gmail.com</p>
-                </div>
-                <div class="footer1-div2">
-                    <h4>Useful Links</h4>
-                    <p>Wall Panels</p>
-                    <p>Eterior Panels</p>
-                    <p>Restroom Compartments</p>
-                    <p>Lockers</p>
-                    <p>CompactWood</p>
-                    <p>Real Wood Veneer Wallcovering</p>
-                </div>
-                <div class="footer1-div3">
-                    <h4>About AAM</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ad? Voluptas veniam non, laudantium necessitatibus ut ad eum exercitationem a quia nostrum similique assumenda cum optio ex facilis debitis sapiente!</p>
-                </div>
-            </div>
-            <div class="footer2">
-                <p>Copyright 2022 American Architectural Millwork LLC. All right reserved.</p>
-                <ul>
-                    <li><img src="./icons/TIPOLOGÍA (A) FACEBOOK -BLANCO.png" alt="" width="10"></li>
-                    <li><img src="./icons/TIPOLOGÍA (A) TWITTER -BLANCO.png" width="10" alt=""></li>
-                    <li><img src="./icons/TIPOLOGÍA (A) WHATSSAPP -BLANCO.png" width="10" alt=""></li>
-                    <li><img src="./icons/TIPOLOGÍA (A) TELEGRAM -BLANCO.png" width="10" alt=""></li>
-                    <li><img src="./icons/TIPOLOGÍA (A) INSTAGRAM -BLANCO.png" width="10" alt=""></li>
-                </ul>
-            </div>    
-        </div>
+    <footer>
     </footer>
 </body>
 </html>
